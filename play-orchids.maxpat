@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1886.0, 79.0, 1237.0, 967.0 ],
+		"rect" : [ -926.0, 79.0, 892.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,32 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 855.0, 286.0, 75.0, 22.0 ],
-					"style" : "",
-					"text" : "bach.dl2line"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 680.571472, 428.0, 113.0, 22.0 ],
-					"style" : "",
-					"text" : "bach.keys 4 @out t"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -83,7 +57,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 999.0, 43.0, 30.0, 30.0 ],
+					"patching_rect" : [ 189.0, 43.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -95,22 +69,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 621.571472, 637.0, 81.0, 22.0 ],
+					"patching_rect" : [ 363.0, 109.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend note"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 621.571472, 589.0, 63.0, 22.0 ],
-					"style" : "",
-					"text" : "pack s i i i"
 				}
 
 			}
@@ -121,35 +82,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 621.571472, 724.0, 135.0, 22.0 ],
+					"patching_rect" : [ 363.0, 147.0, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ sample-player 64"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 9,
-					"outlettype" : [ "float", "int", "float", "int", "", "", "", "int", "" ],
-					"patching_rect" : [ 621.571472, 296.0, 103.0, 22.0 ],
-					"style" : "",
-					"text" : "bach.unpacknote"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 621.571472, 344.0, 113.0, 22.0 ],
-					"style" : "",
-					"text" : "bach.keys 3 @out t"
+					"text" : "poly~ sample-player 16"
 				}
 
 			}
@@ -406,7 +341,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 621.571472, 43.0, 30.0, 30.0 ],
+					"patching_rect" : [ 124.5, 43.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -431,7 +366,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 621.571472, 793.0, 30.0, 30.0 ],
+					"patching_rect" : [ 363.0, 193.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -448,7 +383,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
@@ -547,15 +482,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -569,42 +495,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-29", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-29", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-29", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-29", 6 ]
 				}
 
 			}
@@ -659,24 +549,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -745,6 +617,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "sample-player.maxpat",
+				"bootpath" : "~/Documents/Max Patches/Orchids-Player",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bach.unpacknote.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
 				"type" : "JSON",
@@ -759,12 +637,6 @@
 , 			{
 				"name" : "bach.filter.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sample-player.maxpat",
-				"bootpath" : "~/Documents/Max Patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -888,6 +760,10 @@
 			}
 , 			{
 				"name" : "bach.lace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "supervp.trans~.mxo",
 				"type" : "iLaX"
 			}
  ],
