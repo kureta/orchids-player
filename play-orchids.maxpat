@@ -38,26 +38,39 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-38",
+					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 363.0, 344.0, 60.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 301.5, 251.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "loadbang"
+					"text" : "opendialog folder"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"comment" : "Clear Buffer",
+					"id" : "obj-3",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 312.0, 43.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Select SOL folder",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 189.0, 43.0, 30.0, 30.0 ],
+					"patching_rect" : [ 228.5, 43.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +97,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 363.0, 147.0, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ sample-player 16"
+					"text" : "poly~ sample-player 32"
 				}
 
 			}
@@ -202,7 +215,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 209.0, 37.0, 22.0 ],
+					"patching_rect" : [ 60.0, 183.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -218,19 +231,6 @@
 					"patching_rect" : [ 251.5, 410.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "sy.prepend"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 363.0, 370.0, 230.0, 22.0 ],
-					"style" : "",
-					"text" : "/Volumes/1TB-WD/IRCAM/SOL_0.9_HQ/"
 				}
 
 			}
@@ -374,7 +374,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -455,15 +455,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -500,6 +491,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -522,15 +522,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -567,6 +558,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -760,10 +760,6 @@
 			}
 , 			{
 				"name" : "bach.lace.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "supervp.trans~.mxo",
 				"type" : "iLaX"
 			}
  ],

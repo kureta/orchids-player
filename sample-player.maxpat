@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 187.0, 416.0, 76.0, 22.0 ],
-					"presentation_rect" : [ 274.0, 431.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "snapshot~ 5"
 				}
@@ -58,7 +57,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
 					"patching_rect" : [ 187.0, 377.0, 36.0, 22.0 ],
-					"presentation_rect" : [ 282.0, 381.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "line~"
 				}
@@ -286,9 +284,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 127.0, 342.166656, 65.0, 22.0 ],
+					"patching_rect" : [ 127.0, 342.166656, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "delay 5ms"
+					"text" : "delay 5"
 				}
 
 			}
@@ -459,6 +457,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 56.0, 848.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -472,6 +474,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.0, 30.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 1"
 				}
